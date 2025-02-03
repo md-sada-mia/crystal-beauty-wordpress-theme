@@ -32,7 +32,7 @@ $atts = get_query_var('testimonials_atts', array());
 
           <div class="col-md-6">
             <div class="reviewImage">
-              <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full') ?>" data-src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full') ?>" alt="Image review" class="img-responsive lazyestload">
+              <img src="<?php echo get_placeholder_image_url('square') ?>" data-src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full') ?>" alt="Image review" class="img-responsive lazyestload">
             </div>
 
             <div class="reviewInfo mb-md-0">

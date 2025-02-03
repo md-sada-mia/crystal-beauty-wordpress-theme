@@ -87,6 +87,7 @@ jQuery(document).ready(function(){
         margin: 0,
         nav: true,
         dots: true,
+        lazyLoad: true,  // Enable Lazy Loading
         navText: [  ],
         animateIn,  // Add fade-in animation when a slide enters
         animateOut, // Add fade-out animation when a slide leaves
@@ -95,7 +96,19 @@ jQuery(document).ready(function(){
         autoplayHoverPause: true,
         smartSpeed:700
       });
+
+      // Manually update background images
+    $(this).find("[data-src]").each(function () {
+        var bgImg = $(this).attr("data-src") || null;
+        if (bgImg) {
+            $(this).css("background-image", "url('" + bgImg + "')");
+        }
     });
+
+      
+    });
+
+    
   }
 
   var heroSliderRtl = $('.rtl .main-slider .inner');
@@ -203,6 +216,7 @@ jQuery(document).ready(function(){
       autoplayTimeout:6000,
       autoplayHoverPause:true,
       nav:true,
+      lazyLoad: true,  // Enable Lazy Loading
       dots: false,
       smartSpeed:700,
     });

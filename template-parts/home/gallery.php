@@ -68,7 +68,7 @@ $atts = get_query_var('gallery_atts', array());
           <div class="col-sm-3 isotopeSelector <?php echo $first_category_id ?>">
             <div class="card">
               <div class="card-img">
-                <img class="img-full lazyestload" data-src="<?php echo $thumbnail_url ?>" src="<?php echo $thumbnail_url ?>" alt="Image">
+                <img class="img-full lazyestload" data-src="<?php echo $thumbnail_url ?>" src="<?php echo get_placeholder_image_url('rectangle') ?>" alt="Image">
                 <div class="overlay-content">
                   <a href="<?php echo $thumbnail_url ?>" data-fancybox="images">
                     <h5>

@@ -42,7 +42,7 @@ $atts = get_query_var('simple_products_atts', array());
               <div class="row">
                 <div class="col-md-6 order">
                   <div class="productImage">
-                    <img src="<?php echo $image_url ?>" data-src="<?php echo $image_url ?>" alt="<?php echo esc_html($product->get_name()) ?>" class="img-responsive lazyestload">
+                    <img src="<?php echo get_placeholder_image_url('rectangle') ?>" data-src="<?php echo $image_url ?>" alt="<?php echo esc_html($product->get_name()) ?>" class="img-responsive lazyestload">
                     <!-- <a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a> -->
                   </div>
                 </div>

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-sm-6 col-xs-12 rightPadding">
           <div class="imagebox ">
-            <img class="img-responsive lazyestload" data-src="<?php echo get_theme_mod('about_image', get_template_directory_uri() . '/img/home/home-about.jpg'); ?>" src="<?php echo get_theme_mod('about_image', get_template_directory_uri() . '/img/home/home-about.jpg'); ?>" alt="Image About">
+            <img class="img-responsive lazyestload" data-src="<?php echo get_theme_mod('about_image', get_placeholder_image_url('square')); ?>" src="<?php echo get_placeholder_image_url('square'); ?>" alt="Image About">
           </div>
         </div>
         <div class="col-sm-6 col-xs-12">

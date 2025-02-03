@@ -16,7 +16,7 @@
           ?>
               <div class="slide">
                 <div class="partnersLogo clearfix">
-                  <img class="lazyestload" data-src="<?php echo $image_url ?>" src="<?php echo $image_url ?>" alt="Image Partner">
+                  <img class="lazyestload" data-src="<?php echo $image_url ?>" src="<?php echo get_placeholder_image_url('rectangle') ?>" alt="Image Partner">
                 </div>
               </div>
           <?php

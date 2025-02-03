@@ -41,7 +41,7 @@ $atts = get_query_var('package_service_atts', array());
             ?>
               <div class="priceImage">
                 <?php if ($image_id) { ?>
-                  <img src="<?php echo $image_url ?>" data-src="<?php echo $image_url ?>" alt="<?php echo esc_html($product->get_name()) ?>" class="img-responsive lazyestload">
+                  <img src="<?php echo get_placeholder_image_url('rectangle') ?>" data-src="<?php echo $image_url ?>" alt="<?php echo esc_html($product->get_name()) ?>" class="img-responsive lazyestload">
                 <?php } ?>
                 <div class="maskImage">
                   <h3><?php echo esc_html($product->get_name()) ?></h3>

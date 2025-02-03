@@ -22,7 +22,7 @@ if (!class_exists('WooCommerce')) {
       ?>
         <div class="col-sm-3 col-xs-12">
           <div class="offerContent mt-4">
-            <img class="lazyestload" src="<?php echo $image_url ?>" data-src="<?php echo $image_url ?>" alt="<?php echo esc_html($product->get_name()) ?>">
+            <img class="lazyestload" src="<?php echo get_placeholder_image_url('square') ?>" data-src="<?php echo $image_url ?>" alt="<?php echo esc_html($product->get_name()) ?>">
             <div class="offerMasking">
               <div class="offerTitle">
                 <h4><a href="<?php echo esc_url($product->get_permalink()); ?>"><?php echo esc_html($product->get_name()) ?></a></h4>

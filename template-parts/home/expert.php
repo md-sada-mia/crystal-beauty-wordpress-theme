@@ -39,7 +39,7 @@ $atts = get_query_var('experts_atts', array());
               <div class="slide">
                 <div class="expertBox">
                   <div class="expertImage">
-                    <img class="lazyestload" data-src="<?php echo $image_url ?>" src="<?php echo $image_url ?>" alt="Image expert">
+                    <img class="lazyestload" data-src="<?php echo $image_url ?>" src="<?php echo get_placeholder_image_url('square') ?>" alt="Image expert">
                     <div class="expertMask">
                       <div class="socialArea">
                         <ul class="list-inline">

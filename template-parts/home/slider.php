@@ -54,7 +54,7 @@ $slider_interval = get_theme_mod('slider_interval', 3000);
 
         ?>
 
-                <div class="slide slideResize slide2" style="background-image: url('<?php echo esc_url($slide_image); ?>');">
+                <div class="slide slideResize slide2" data-src="<?php echo esc_url($slide_image); ?>" style="background-image: url('<?php echo get_placeholder_image_url('banner') ?>');">
                     <div class="container">
                         <div class="common-inner <?php echo $slider_style ?>">
                             <span class="h1 from-bottom"><?php the_title(); ?></span>
@@ -123,7 +123,7 @@ $slider_interval = get_theme_mod('slider_interval', 3000);
 
         ?>
 
-                <div class="slide slideResize slide2" style="background-image: url('<?php echo esc_url($slide_image); ?>');">
+                <div class="slide slideResize slide2" data-src="<?php echo esc_url($slide_image); ?>" style="background-image: url('<?php echo get_placeholder_image_url('mobile') ?>');">
                     <div class="container">
                         <div class="common-inner <?php echo $slider_style ?>">
                             <span class="h1 from-bottom"><?php the_title(); ?></span>

@@ -92,7 +92,7 @@ $atts = get_query_var('service_atts', array());
                                                   echo 'active';
                                                 } ?>" id="product_<?php echo esc_html($product->get_id()) ?>">
                             <div class="varietyContent">
-                              <img src="<?php echo $image_url ?>" data-src="<?php echo $image_url ?>" alt="<?php echo esc_attr($product->get_name()); ?>" class="img-responsive lazyestload">
+                              <img src="<?php echo get_placeholder_image_url('banner') ?>" data-src="<?php echo $image_url ?>" alt="<?php echo esc_attr($product->get_name()); ?>" class="img-responsive lazyestload">
                               <h3><?php echo esc_html($product->get_name()) ?></h3>
                               <h4>
                                 <?php

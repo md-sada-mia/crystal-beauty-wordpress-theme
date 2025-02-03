@@ -200,3 +200,8 @@ function crystal_beauty_theme_hompage_customizer_panel($wp_customize)
 add_action('customize_register', 'crystal_beauty_theme_hompage_customizer_panel');
 
 require_once get_template_directory() . '/fns/appointment-modal-fn.php';
+
+function get_placeholder_image_url($type = 'banner')
+{
+    return get_template_directory_uri() . '/img/' . $type . '-placeholder.gif';
+}
