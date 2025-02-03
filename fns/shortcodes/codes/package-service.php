@@ -24,6 +24,7 @@ add_shortcode('package-service', function ($atts) {
         wp_enqueue_script('masonry');
         wp_enqueue_script('selectize');
         wp_enqueue_script('custom');
+        wp_enqueue_script('lazyload');
         wp_enqueue_script('datepicker');
         // Localize script to provide AJAX URL
         wp_localize_script('custom', 'ajaxurl', array(
