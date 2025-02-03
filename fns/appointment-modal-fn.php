@@ -3,9 +3,7 @@ function get_appointment_modal_id($id)
 {
     return 'appoinmentModal_' . esc_html($id);
 }
-?>
 
-<?php
 function generate_appointment_modal($id, $service_name)
 {
 
