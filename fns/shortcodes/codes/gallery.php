@@ -8,6 +8,7 @@ add_shortcode('gallery', function ($atts) {
         wp_enqueue_script('isotope');
         wp_enqueue_script('fancybox');
         wp_enqueue_script('isotop-trigger');
+        wp_enqueue_script('custom');
         wp_enqueue_script('lazyload');
     });
 

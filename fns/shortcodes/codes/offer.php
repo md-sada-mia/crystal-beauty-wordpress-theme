@@ -3,8 +3,8 @@
 add_shortcode('offer', function () {
 
     add_action('wp_footer', function () {
-        wp_enqueue_script('lazyload');
         wp_enqueue_script('custom');
+        wp_enqueue_script('lazyload');
     });
 
     ob_start();

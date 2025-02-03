@@ -5,8 +5,9 @@ add_shortcode('experts', function ($atts) {
         wp_enqueue_style('owl_carousel');
 
         wp_enqueue_script('owl_carousel');
-        wp_enqueue_script('lazyload');
+
         wp_enqueue_script('custom');
+        wp_enqueue_script('lazyload');
     });
 
     $atts = shortcode_atts(

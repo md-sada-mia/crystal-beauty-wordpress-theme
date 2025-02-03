@@ -2,7 +2,8 @@
 
 add_shortcode('about-section', function () {
     add_action('wp_footer', function () {
-        wp_enqueue_script('lazyload',);
+        wp_enqueue_script('custom');
+        wp_enqueue_script('lazyload');
     });
 
 

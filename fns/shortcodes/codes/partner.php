@@ -7,8 +7,8 @@ add_shortcode('partner', function () {
         wp_enqueue_style('owl_carousel');
 
         wp_enqueue_script('owl_carousel');
-        wp_enqueue_script('lazyload');
         wp_enqueue_script('custom');
+        wp_enqueue_script('lazyload');
     });
 
     ob_start();

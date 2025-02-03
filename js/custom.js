@@ -118,7 +118,8 @@ jQuery(document).ready(function(){
       rtl: true
     });
   }
-
+  $(".se-pre-con").fadeOut("slow");
+  
   //============================== MAIN SLIDER RESIZE =========================
   function resizeContentMobile() {
     var height = $(window).height() - 119;
