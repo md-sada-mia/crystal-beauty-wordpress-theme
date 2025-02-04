@@ -50,8 +50,9 @@
         <div class="container">
 
           <div class="top-bar-right">
-            <ul class="list-inline">
-              <li>
+            <ul class="list-inline text-right">
+
+              <li class="d-none d-md-inline-block">
                 <a href="mailto:<?php echo esc_attr(get_theme_mod('contact_email', 'info@yourdomain.com')); ?>">
                   <i class="fa fa-envelope" aria-hidden="true"></i> <?php echo esc_html(get_theme_mod('contact_email', 'info@yourdomain.com')); ?>
                 </a>
@@ -63,22 +64,21 @@
                   <?php echo esc_html(get_theme_mod('contact_phone', '+1 234 567 8900')); ?>
                 </span>
               </li>
-              <li>
-                <?php
-                $social_icons = array(
-                  'facebook'   => 'fa-facebook',
-                  'instagram'   => 'fa-instagram',
-                );
+              <?php
+              $social_icons = array(
+                'facebook'   => 'fa-facebook',
+                'instagram'   => 'fa-instagram',
+              );
 
-                foreach ($social_icons as $key => $icon) {
-                  $social_url = get_theme_mod("social_$key", '');
-                  if (!empty($social_url)) {
-                    echo '<li><a href="' . esc_url($social_url) . '" target="_blank"><i class="fa ' . esc_attr($icon) . '" aria-hidden="true"></i></a></li>';
-                  }
+              foreach ($social_icons as $key => $icon) {
+                $social_url = get_theme_mod("social_$key", '');
+                if (!empty($social_url)) {
+                  echo '<li><a href="' . esc_url($social_url) . '" target="_blank"><i class="fa ' . esc_attr($icon) . '" aria-hidden="true"></i></a></li>';
                 }
-                ?>
+              }
+              ?>
 
-              </li>
+
             </ul>
           </div>
         </div>
