@@ -123,3 +123,5 @@ if (get_theme_mod('partner_section_visibility', 1)) {
 
 
 <?php get_footer(); ?>
+
+<!-- sort update commit -->
