@@ -2,7 +2,7 @@
 
 Crystal Beauty is a premium, custom-built WordPress theme designed specifically for beauty salons, spas, and wellness centers. Based on the elegant Crystal Beauty HTML template, this theme provides a seamless blending of aesthetics and functionality, featuring full WooCommerce integration and a custom appointment management system.
 
-## 🌟 Key Features
+## 🌟 Key Features 
 
 - **Responsive Design:** Optimized for all devices, from desktops to mobile phones.
 - **Appointment System:** Built-in appointment booking form with automated email notifications.
